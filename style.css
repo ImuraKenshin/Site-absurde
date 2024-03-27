@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Honk&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    color: black;
+    box-sizing: border-box;
+}
+
+:root{
+    --bg: #13122F;
+    --bodyRadiant: #17139f;
+    --bgArticle: #0f0c70;
+    --articleRadiant: #570404;
+    --title: #37A942;
+
+}
+body{
+    background-color: var(--bg);
+}
+
+/*
+****************************GENERAL******************************
+*/
+
+.container{
+    max-width: 1200px;
+    margin: 50px auto 0 auto;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.justify-around{
+    justify-content: space-around;
+}
+.justify-center{
+    justify-content: center;
+}
+.justify-end{
+    justify-content: flex-end;
+}
+.align-center{
+    align-items: center;
+}
+.content-center{
+    align-content: center;
+}
+h1{
+    font-family: "Honk";
+    font-size: 78px;
+}
+h2{
+    width: 100%;
+    font-family: "honk";
+    font-size: 56px;
+    text-align: center;
+}
+h3{
+    color: var(--title);
+    font-size: 24px;
+    margin-bottom: 5%;
+}
+h4{
+    font-size: 24px;
+}
+p{
+    font-size: 16px;
+}
+a {
+    text-decoration: none;
+    font-size: 24px;
+}
+a :visited{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.ul a{
+    font-size: 16px;
+}
+.bouton{
+    width: 100%;
+    height: 10vh;
+}
+.bouton a {
+    color: white;
+    width: fit-content;
+    background-color: rgb(16, 16, 155);
+    padding: 2% 10%;
+    border-radius: 20px;
+
+}
+section{
+    background: rgb(2,0,36);
+    background: linear-gradient(50deg, rgba(2,0,36,1) 0%, #0f0c70 60%, #570404 100%);
+    border-radius: 5px;
+    z-index: 1;
+    align-items: center;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.br10{
+    border-radius: 10px;
+}
+.gap16{
+    gap: 16px;
+}
+/*
+****************************HEADER*******************************
+*/
+
+header{
+    background-color: #13122fba;
+    position: sticky;
+    top: 0px;
+    justify-content: space-between;
+    padding: 0 5%;
+    height: 50px;
+    z-index: 3;
+}
+header nav{
+    width: 35%;
+}
+header a{
+    color: white;
+}
+header p{
+    color: var(--title);
+    font-size: 1.5rem;
+}
+header img{
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+header>div{
+    gap: 100px;
+}
+
+/*
+*****************************HERO********************************
+*/
+
+.hero{
+    height: calc(100vh - 50px);
+    background-image: url(./Assets/banniere-grimace-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: flex-end;
+}
+
+.hero>div{
+    background-color:#13122fc8;
+    width: 45%;
+    padding: 1%;
+    border-radius: 50px;
+}
+.hero p{
+    color: white;
+    font-size: 2rem;
+}
+
+/*
+****************************GALERIE******************************
+*/
+
+.imgGal {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 0.5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "photo1 photo2 photo4 photo6"
+      "photo1 photo3 photo5 photo7"
+      "galerie photo3 poster poster";
+  }
+    .photo1 { grid-area: photo1; }
+    .photo2 { grid-area: photo2; }
+    .photo3 { grid-area: photo3; }
+    .photo4 { grid-area: photo4; }
+    .photo5 { grid-area: photo5; }
+    .photo6 { grid-area: photo6; }
+    .photo7 { grid-area: photo7; }
+    .galerie { grid-area: galerie; }
+    .poster { grid-area: poster; }
+
+.galerie{
+    align-self: center;
+}
+.poster{
+    align-self: center;
+}
+
+/*
+*****************************DEFIS*******************************
+*/
+
+.defis{
+    width: 45%;
+}
+.imgDefis{
+    width: 50%;
+}
+.defis p{
+    width: 70%;
+    color: white;
+}
+
+/*
+****************************HISTOIRE*****************************
+*/
+
+.histoire{
+    width: 45%;
+}
+.histoire p{
+    width: 70%;
+    color: white;
+}
+
+/*
+****************************BGMIDDLE*****************************
+*/
+
+.bgMiddle{
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+    top: 2000px;
+}
+
+/*
+****************************ATELIERS*****************************
+*/
+
+.atelier{
+    padding: 1% 3%;
+    position: relative;
+}
+.atelier div{
+    width: 45%;
+}
+.atelier>div>a{
+    width: 50%;
+    text-align: center;
+    margin: 2%;
+}
+.atelier p{
+    color: white;
+}
+.duo{
+    position: relative;
+    top: 50px;
+    left: 80px;
+    rotate: -15deg;
+    z-index: 2;
+    width: 30%;
+}
+.img{
+    width: 60%;
+}
+.img2{
+    z-index: 1;
+    position: relative;
+    bottom: 40px;
+    left: 120px;
+    rotate: 10deg;
+    width: 60%;
+}
+
+/*
+****************************BOUTIQUE*****************************
+*/
+.boutique{
+    padding: 10px;
+}
+.boutique>h2{
+    margin-bottom: 16px;
+}
+.card{
+    width: 30%;
+    background-color: white;
+}
+.cardContent{
+    padding: 0 10px 10px 10px;
+}
+.imgProfil{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+/*
+**************************COMMUNAUTEE****************************
+*/
+
+.communautee{
+    align-content: space-evenly;
+    padding: 10px;
+}
+.box{
+    width: 30%;
+    background-color:white;
+}
+.marginBox{
+    margin-bottom: 24px;
+}
+
+.newsletter{
+    border-color: var(--articleRadiant);
+    max-width: 50%;
+    margin-top: 3%;
+}
+
+.mail p{
+    color: white;
+}
+
+/*
+*****************************BGEND*******************************
+*/
+
+.bgEnd{
+    position: relative;
+    width: 100%;
+    margin-top: -250px;
+    z-index: -1;
+}
+
+/*
+*****************************FOOTER******************************
+*/
+
+footer{
+    margin-top: 50px;
+    background: rgb(2,0,36);
+    background: linear-gradient(50deg, rgba(2,0,36,1) 0%, #0f0c70 60%, #570404 100%);
+    border-radius: 5px;
+    justify-content: space-evenly;
+    margin-top: -150px;
+}
+.autre{
+    width: 20%;
+    flex-direction: column;
+}
+.autre ul{
+    flex-direction: column;
+    gap: 15px;
+}
+.autre p{
+    color: white;
+}
+.autre a{
+    color: white;
+}
