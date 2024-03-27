@@ -21,15 +21,15 @@
             </ul>
         </nav>
         <div class="flex">
-            <div class="flex align-center">
+            <div class="flex gap16 align-center">
                 <img src="./Assets/craiyon_150626_logo_grimace_com.png" alt="">
                 <P>GrimaceART</P>
             </div>
-            <div class="buttons align-center">
+            <div class="flex gap16 align-center">
                 <a class="button is-primary">
                   <strong>Sign up</strong>
                 </a>
-                <a class="button is-light">
+                <a class="button">
                   Log in
                 </a>
             </div>
@@ -164,68 +164,35 @@
         <section class="communautee container flex justify-center" id="commu">
             <div class="flex gap16 commu justify-around">
                 <h2>Toi aussi rejoint-les</h2>
-                <div class="box">
-                    <div class="media">
-                      <div class="media-left">
-                        <figure class="image is-64x64">
-                          <img class="img-profil" src="./Assets/Profil1.jpg" alt="Image">
-                        </figure>
-                      </div>
-                      <div class="media-content">
-                        <div class="content">
-                          <p>
-                            <strong>Marie-Claire, 29 ans</strong>
-                            <br>
-                            "J'ai récemment participé à l'atelier Grimace de GrimaceART et j'ai adoré chaque minute ! C'était une expérience vraiment unique où j'ai pu me laisser aller et explorer différentes expressions faciales en compagnie d'autres passionnés. L'animateur était incroyablement talentueux et a su créer une atmosphère ludique et détendue."
-                          </p>
-                        </div>
-                      </div>
+                <div class="box flex gap16">
+                    <div class="flex align-center gap16">
+                        <div class="profil"><img src="./Assets/Profil1.jpg" alt="Image"></div>
+                        <div><strong>Marie-Claire, 29 ans</strong></div>
                     </div>
+                    <p>"J'ai récemment participé à l'atelier Grimace de GrimaceART et j'ai adoré chaque minute ! C'était une expérience vraiment unique où j'ai pu me laisser aller et explorer différentes expressions faciales en compagnie d'autres passionnés. L'animateur était incroyablement talentueux et a su créer une atmosphère ludique et détendue."</p>
                 </div>
-                <div class="box">
-                    <div class="media">
-                      <div class="media-left">
-                        <figure class="image is-64x64">
-                          <img class="img-profil" src="./Assets/Profil2.jpg" alt="Image">
-                        </figure>
-                      </div>
-                      <div class="media-content">
-                        <div class="content">
-                            <p>
-                                <strong>Antoine, 36 ans</strong>
-                                <br>
-                                "J'ai toujours été fasciné par l'art de la grimace, alors quand j'ai découvert les ateliers Grimace de GrimaceART, j'ai sauté sur l'occasion de m'inscrire. Et je n'ai pas été déçu ! L'atelier était très bien organisé et l'animateur était passionné et plein d'énergie."
-                              </p>
-                        </div>
-                      </div>
+                <div class="box flex gap16">
+                    <div class="flex align-center gap16">
+                        <div class="profil"><img src="./Assets/Profil2.jpg" alt="Image"></div>
+                        <div><strong>Antoine, 36 ans</strong></div>
                     </div>
+                    <p>"J'ai toujours été fasciné par l'art de la grimace, alors quand j'ai découvert les ateliers Grimace de GrimaceART, j'ai sauté sur l'occasion de m'inscrire. Et je n'ai pas été déçu ! L'atelier était très bien organisé et l'animateur était passionné et plein d'énergie."</p>
                 </div>
-                <div class="box marginBox">
-                    <div class="media">
-                      <div class="media-left flex">
-                        <figure class="image is-64x64">
-                          <img class="img-profil" src="./Assets/Profil3.jpg" alt="Image">
-                        </figure>
-                      </div>
-                      <div class="media-content flex">
-                        <div class="content">
-                          <p>
-                            <strong>Sophie, 52 ans</strong>
-                            <br>
-                            "J'ai participé à l'atelier Grimace de GrimaceART avec quelques amis et nous avons passé un après-midi absolument hilarant ! L'atelier était interactif et amusant, et l'animateur a su créer une ambiance chaleureuse et accueillante. C'était génial de pouvoir explorer différentes expressions faciales tout en partageant des fous rires avec mes amis."
-                          </p>
-                        </div>
-                      </div>
+                <div class="box flex gap16">
+                    <div class="flex align-center gap16">
+                        <div class="profil"><img src="./Assets/Profil3.jpg" alt="Image"></div>
+                        <div><strong>Sophie, 52 ans</strong></div>
                     </div>
+                    <p>"J'ai participé à l'atelier Grimace de GrimaceART avec quelques amis et nous avons passé un après-midi absolument hilarant ! L'atelier était interactif et amusant, et l'animateur a su créer une ambiance chaleureuse et accueillante. C'était génial de pouvoir explorer différentes expressions faciales tout en partageant des fous rires avec mes amis."</p>
                 </div>
-            </div>
+            </div>    
             <div class="flex mail justify-center">
                 <h2>Pour ne rien rater</h2>
                 <p>
                     Recevez des informations exclusives sur nos prochains ateliers, concours et promotions spéciales directement dans votre boîte de réception.
                 </p>
-                <input class="input newsletter" type="mail" placeholder="mail.exemple@gmail.com">
-                <input class="button newsletter" type="submit" value="Valider">
+                <input class="input newsletter" type="mail" name="mail" id="mail" placeholder="mail.exemple@gmail.com">
+                <input class="button newsletter" type="submit" name="inscrire" id="inscrire" value="M'inscrire">
             </div>
         </section>
     </main>
