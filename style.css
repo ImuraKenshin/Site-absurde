@@ -71,6 +71,14 @@ p{
 a {
     text-decoration: none;
     font-size: 24px;
+    color: white;
+}
+.bouton{ 
+    background-color: rgb(16, 16, 155);
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 16px;
+    padding: 10px 40px;
 }
 a :visited{
     text-decoration: none;
@@ -80,18 +88,6 @@ ul{
 }
 .ul a{
     font-size: 16px;
-}
-.bouton{
-    width: 100%;
-    height: 10vh;
-}
-.bouton a {
-    color: white;
-    width: fit-content;
-    background-color: rgb(16, 16, 155);
-    padding: 2% 10%;
-    border-radius: 20px;
-
 }
 section{
     background: rgb(2,0,36);
@@ -112,6 +108,82 @@ img{
 .gap16{
     gap: 16px;
 }
+
+/*
+*************************MENU BURGER***************************
+*/
+
+#headerBurger{
+    z-index: 1000000;
+    display: none;
+    background-color: #13122fba;
+    box-shadow: 1px 0 5px rgba(0, 0, 0, 0.198);
+    padding: 32px 32px;
+    width: 200px;
+    height: calc(100vh - 50px);
+    position: fixed;
+    top: 50px;
+    left: 0;
+    transform: translateX(-200px);
+    transition: transform 0.6s linear;
+}
+/* icon burger*/
+#burger{
+    display: none;
+    z-index: 10000000;
+    border-radius: 10px;
+    border: 1px solid #1a1a1a;
+    background: rgba(125, 125, 125, 0.39);
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.20);
+    backdrop-filter: blur(15px);
+    width: 40px;
+    height: 40px;
+}
+#burgerIcon{
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    font-family: inherit;
+}
+.burger_icon {
+    width: 20px;
+    height: 20px;
+    padding: 3px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+  
+.burger_icon span {
+  width: 100%;
+  height: 0.125rem;
+  border-radius: 0.125rem;
+  background: linear-gradient(50deg, rgba(2,0,36,1) 0%, #0f0c70 60%, #570404 100%);
+  box-shadow: 0 .5px 2px 0 hsla(0, 0%, 0%, .2);
+  transition: transform .4s, background-color .4s, width .4s, opacity .4s;
+}
+
+.burger_icon span:nth-child(2) {
+  width: 60%;
+}
+
+.burgerCroix1{
+  background: rgb(255, 59, 48) !important;
+  transform: translateY(7.5px) rotate(-45deg);
+}
+
+.burgerCroix2{
+  width: 0;
+  opacity: 0;
+}
+
+.burgerCroix3{
+  background: rgb(255, 59, 48) !important;
+  transform: translateY(-6.5px) rotate(45deg);
+}
+
 /*
 ****************************HEADER*******************************
 */
@@ -149,6 +221,9 @@ header>div{
 }
 .button{
     cursor: pointer;
+}
+.mobile{
+    display: none;
 }
 
 /*
@@ -255,9 +330,7 @@ header>div{
     width: 45%;
 }
 .atelier>div>a{
-    width: 50%;
     text-align: center;
-    margin: 2%;
 }
 .atelier p{
     color: white;
@@ -386,8 +459,119 @@ footer{
 *****************************************************************
 */
 
+/*
+******************************1250*******************************
+*/
+
 @media all and (max-width:1250px){
     .container{
         max-width: 900px;
+    }
+    .d-none{
+        display: none;
+    }
+    #burger{
+        display: flex;
+    }
+    #headerBurger{
+        display: block;
+    }
+    h1{
+        font-size: 48px;
+    }
+    .hero p{
+        font-size: 20px;
+    }
+    .communautee strong{
+        font-size: 15px;
+    }
+}
+
+/*
+******************************900********************************
+*/
+
+@media all and (max-width:950px){
+    .container{
+        max-width: 600px;
+    }
+    h1{
+        font-size: 24px;
+    }
+    .hero p{
+        font-size: 16px;
+        text-align: center;
+    }
+    h2{
+        font-size: 35px;
+    }
+    a{
+        font-size: 16px;
+    }
+    .flex-column{
+        flex-direction: column;
+    }
+    .defis{
+        width: 100%;
+        margin-bottom: 16px;
+    }
+    .histoire{
+        width: 100%;
+    }
+    .bgMiddle{
+        top: 2200px;
+    }
+    .card{
+        width: 100%;
+        margin-bottom: 16px;
+    }
+    .box{
+        width: 100%;
+    }
+    .bgEnd{
+        margin-top: -150px;
+    }
+    footer{
+        padding: 30px;
+        margin-top: -50px;
+    }
+}
+
+/*
+******************************900********************************
+*/
+
+@media all and (max-width:650px){
+    header>div{
+        gap: 8px;
+    }
+    .gap16{
+        gap: 8px;
+    }
+    .mobile{
+        display: flex;
+        margin: 16px 0;
+    }
+    .hidden{
+        display: none;
+    }
+    #headerBurger img{
+        width: 24px;
+        height: 24px;
+    }
+    #headerBurger p{
+        font-size: 16px;
+    }
+    #headerBurger li{
+        margin-bottom: 16px;
+    }
+    .hero>div{
+        width: 100%;
+    }
+    .atelier>div{
+        width: 100%;
+    }
+    footer{
+        gap: 16px;
     }
 }

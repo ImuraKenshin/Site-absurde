@@ -12,7 +12,36 @@
     -----------------------------------HEADER--------------------------------
     -->
     <header class="flex align-center">
-        <nav>
+        <div id="burger" class="init flex align-center justify-center">
+            <button id="burgerIcon" class="burger_icon flex">
+                <span id="1"></span>
+                <span id="2"></span>
+                <span id="3"></span>
+            </button>
+        </div>
+        <div id="headerBurger">
+            <div class="flex gap16 align-center mobile">
+                <img src="./Assets/craiyon_150626_logo_grimace_com.png" alt="">
+                <P>GrimaceART</P>
+            </div>
+            <nav>
+                <ul class="flex gap16">
+                    <li><a href="#Gal">Galerie</a></li>
+                    <li><a href="#Ate">Ateliers</a></li>
+                    <li><a href="#Bou">Boutique</a></li>
+                    <li><a href="#commu">Communauté</a></li>
+                </ul>
+            </nav>
+            <div class="flex gap16 align-center mobile">
+                <a class="button is-primary">
+                  <strong>Sign up</strong>
+                </a>
+                <a class="button">
+                  Log in
+                </a>
+            </div>
+        </div>
+        <nav class="d-none">
             <ul class="flex justify-around">
                 <li><a href="#Gal">Galerie</a></li>
                 <li><a href="#Ate">Ateliers</a></li>
@@ -20,7 +49,7 @@
                 <li><a href="#commu">Communauté</a></li>
             </ul>
         </nav>
-        <div class="flex">
+        <div class="flex hidden">
             <div class="flex gap16 align-center">
                 <img src="./Assets/craiyon_150626_logo_grimace_com.png" alt="">
                 <P>GrimaceART</P>
@@ -65,11 +94,11 @@
                 <div class="photo5"><img class="br10" src="./Assets/Firefly photo d'une personne faisant une grimace 29157.jpg" alt=""></div>
                 <div class="photo6"><img class="br10" src="./Assets/Firefly photo d'une personne faisant une grimace 48765.jpg" alt=""></div>
                 <div class="photo7"><img class="br10" src="./Assets/Firefly photo d'une personne faisant une grimace 60478.jpg" alt=""></div>
-                <div class="galerie flex bouton align-center justify-center"><a href="">Toute la galerie</a></div>
-                <div class="poster flex bouton align-center justify-center"><a href="">Poster ma grimace !</a></div>
+                <a class="galerie bouton flex align-center justify-center" href="">Toute la galerie</a>
+                <a class="poster bouton flex align-center justify-center" href="">Poster ma grimace !</a>
             </div>
         </section>
-        <div class="flex container justify-around">
+        <div class="flex container justify-around flex-column">
             <!-- 
             -------------------------------DEFIS---------------------------------
             -->
@@ -79,7 +108,7 @@
                 <p>
                     Un défi de grimace est une occasion ludique pour les membres de notre communauté de montrer leur talent et leur créativité en faisant des grimaces. Que vous soyez un pro de la moue, un expert en sourire éclatant ou un virtuose du froncement de sourcils, les défis de grimace sont l'occasion idéale de vous mettre en avant et de partager votre expressivité unique avec le monde entier.
                 </p>
-                <div class="bouton flex align-center justify-center"><a href="">Exprime-toi avec ton visage !</a></div>
+                <a class="flex bouton align-center justify-center" href="">Exprime-toi avec ton visage !</a>
             </section>
             <!-- 
             ------------------------------HISTOIRE-------------------------------
@@ -92,7 +121,7 @@
                         Dans cette rubrique spéciale, nous vous invitons à partager vos anecdotes les plus amusantes, touchantes ou surprenantes sur des grimaces mémorables que vous avez faites ou que vous avez vues.
                     </p>
                 </div>
-                <div class="bouton flex align-center justify-center"><a href="">Partage !</a></div>
+                <a class="flex bouton align-center justify-center" href="">Partage !</a>
             </section>
         </div>
         <!-- 
@@ -102,10 +131,10 @@
         <!-- 
         ------------------------------ATELIERS-------------------------------
         -->
-        <section class="atelier flex justify-around container" id="Ate">
+        <section class="atelier flex justify-around container flex-column" id="Ate">
             <h2>Atelier "les grimaces en équipe"</h2>
             <div class="flex justify-center">
-                <div class="flex bouton justify-center align-center"><a href="">Inscrit-toi !</a></div>
+                <a class="flex bouton align-center justify-center" href="">Inscrit-toi !</a>
                 <p>
                     Nos ateliers Grimace sont des événements spéciaux conçus pour offrir à nos membres une expérience immersive dans l'art de la grimace. Animés par des experts de l'expression faciale, ces ateliers vous permettront d'apprendre de nouvelles techniques, d'explorer différentes émotions et de vous connecter avec d'autres participants dans une ambiance conviviale et stimulante! <br><br> Rencontrez d'autres amateurs d'expression faciale et partagez votre passion commune pour la grimace dans un environnement bienveillant et sans jugement!
                 </p>
@@ -203,7 +232,7 @@
     <!-- 
         ------------------------------FOOTER---------------------------------
     -->
-    <footer class="flex">
+    <footer class="flex flex-column">
         <div class="footer-section autre flex">
             <h3>Contact</h3>
             <div class="flex gap16">
@@ -214,7 +243,7 @@
             </div>
         </div>
         <div class="footer-section autre flex">
-            <h3>Pour Plus d'Information</h3>
+            <h3>Pour plus d'Information</h3>
             <ul class="flex ul">
                 <li><a href="#">À Propos</a></li>
                 <li><a href="#">Ateliers</a></li>
@@ -231,6 +260,7 @@
         </div>
     </footer>
 
+    <script src="./header.js"></script>
     <script src="./app.js"></script>
 </body>
 </html>
