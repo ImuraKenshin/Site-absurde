@@ -574,4 +574,38 @@ footer{
     footer{
         gap: 16px;
     }
+    .bouton{padding: 5px 5px; text-align: center;}
+    /*
+    ***********************GALERIE**********************
+    */
+    .imgGal {  display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 0.5fr 0.5fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "photo1 photo2 photo3"
+          "photo1 photo4 photo3"
+          "galerie photo5 photo7"
+          "poster photo5 photo7";
+      }
+      
+      .photo1 { grid-area: photo1; }
+      
+      .photo2 { grid-area: photo2; }
+      
+      .photo4 { grid-area: photo4; }
+      
+      .photo3 { grid-area: photo3; }
+      
+      .photo5 { grid-area: photo5; }
+
+      .photo6 { display: none; }
+      
+      .photo7 { grid-area: photo7; }
+      
+      .galerie { grid-area: galerie; }
+      
+      .poster { grid-area: poster; }
+      
 }
