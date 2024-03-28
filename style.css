@@ -111,7 +111,21 @@ img{
 .gap16{
     gap: 16px;
 }
-
+.lienPortfolio{
+    width: 100%;
+    text-align: center;
+}
+.lienPortfolio p{
+    margin-top: 32px;
+    font-size: 16px;
+    color: white;
+}
+.lienPortfolio a{
+    color: #570404;
+}
+.lienPortfolio a:hover{
+    color: #37A942;
+}
 /*
 *************************MENU BURGER***************************
 */
